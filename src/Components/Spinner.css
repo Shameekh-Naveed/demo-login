@@ -1,0 +1,14 @@
+.spinner{
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+      border-color: rgb(165, 165, 165);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+      border-color: white;
+
+    }
+  }
