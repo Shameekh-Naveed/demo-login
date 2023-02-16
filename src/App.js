@@ -9,6 +9,7 @@ function App() {
 		<div id='layout'>
 			<div className='flex min-h-screen flex-col justify-center bg-gray-50 py-12 sm:px-6 lg:px-8'>
 				<Routes>
+					<Route path='/' element={<LoginPage />} />
 					<Route path='/login' element={<LoginPage />} />
 					<Route path='/signup' element={<SignupPage />} />
 					<Route path='/reset' element={<ResetPage />} />
