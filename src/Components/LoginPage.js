@@ -93,8 +93,7 @@ const LoginPage = () => {
 						</label>
 						<div>
 							<input
-                            value={form.email}
-
+								value={form.email}
 								id='email'
 								type='text'
 								autoComplete='off'
@@ -121,7 +120,7 @@ const LoginPage = () => {
 						</label>
 						<div>
 							<input
-                            value={form.password}
+								value={form.password}
 								id='password'
 								type='password'
 								autoComplete='off'
@@ -186,13 +185,10 @@ const LoginPage = () => {
 						<span className='block w-full rounded-md shadow-sm'>
 							<button
 								onClick={handleSubmit}
-								className='focus:shadow-outline-indigo flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:border-indigo-700 focus:outline-none active:bg-indigo-700 relative'
+								className='focus:shadow-outline-indigo flex w-full justify-center  items-center rounded-md border border-transparent bg-indigo-600 h-8 px-4 text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:border-indigo-700 focus:outline-none active:bg-indigo-700'
 							>
-								{login === 'inProgress' ? (
-									<Spinner />
-								) : (
-									'Entrar'
-								)}
+								{login === 'inProgress' ? <Spinner /> : ''}
+								Entrar
 							</button>
 						</span>
 					</div>
